@@ -6,31 +6,22 @@ exec 2>&1
 generate_config() {
   cat > /tmp/config.json << EOF
 {
-  "log": {
-    "level": 1,
-    "format": {
-      "without_time": false
-    }
-  },
-  "runtime": {
-    "mode": "multi_thread",
-    "worker_count": 10
-  },
-  "servers": [
-    {
-      "server": "0.0.0.0",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Y02ds+Tb6hzEtQsrmNKzKg=="
-      "plugin": "v2ray-plugin",
-      "plugin_opts": "server;path=/admin;mode=websocket;tls;host=386e1cab-7b5c-45c5-873b-2a6f2a6cce51.e1-us-east-azure.choreoapps.dev",
-      "plugin_args": [
-         "--verbose"
-      ],
-      "plugin_mode": "tcp_and_udp",
-      "timeout": 7200,
-    }
-  ],
+  "log": { "level": 1, "format": { "without_time": false } },
+  "runtime": { "mode": "multi_thread", "worker_count": 10 },
+  "servers":
+    [
+      {
+        "server": "0.0.0.0",
+        "server_port": 8388,
+        "method": "chacha20-ietf-poly1305",
+        "password": "Y02ds+Tb6hzEtQsrmNKzKg==",
+        "plugin": "v2ray-plugin",
+        "plugin_opts": "server;path=/admin;mode=websocket;tls;host=386e1cab-7b5c-45c5-873b-2a6f2a6cce51.e1-us-east-azure.choreoapps.dev",
+        "plugin_args": ["--verbose"],
+        "plugin_mode": "tcp_and_udp",
+        "timeout": 7200
+      }
+    ],
 
   "manager_address": "127.0.0.1",
   "manager_port": 61000,
@@ -42,7 +33,7 @@ generate_config() {
   "no_delay": false,
   "keep_alive": 15,
   "ipv6_first": true,
-  "ipv6_only": false
+  "ipv6_only": false,
 }
 EOF
 }
