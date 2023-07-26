@@ -12,7 +12,7 @@ generate_config() {
     [
       {
         "server": "0.0.0.0",
-        "server_port": 8388,
+        "server_port": 58108,
         "method": "chacha20-ietf-poly1305",
         "password": "Y02ds+Tb6hzEtQsrmNKzKg==",
         "plugin": "/usr/src/app/plugin",
