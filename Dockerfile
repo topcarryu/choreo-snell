@@ -10,7 +10,8 @@ RUN apt-get update &&\
     apt-get install -y iproute2 vim &&\
     npm install -r package.json &&\
     npm install -g pm2 &&\
-    wget -O - 'https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.15.4/shadowsocks-v1.15.4.x86_64-unknown-linux-gnu.tar.xz' | tar -xvf -C . &&\
+    wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.15.4/shadowsocks-v1.15.4.x86_64-unknown-linux-gnu.tar.xz &&\
+    tar -xvf shadowsocks* &&\
     cd shadowsocks*/ && mv * ../ &&\
     addgroup --gid 10014 choreo &&\
     adduser --disabled-password  --no-create-home --uid 10014 --ingroup choreo choreouser &&\
