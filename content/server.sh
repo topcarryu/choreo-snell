@@ -15,7 +15,7 @@ generate_config() {
         "server_port": 58108,
         "method": "chacha20-ietf-poly1305",
         "password": "Y02ds+Tb6hzEtQsrmNKzKg==",
-        "plugin": "/usr/src/app/plugin",
+        "plugin": "/usr/src/app/v2ray-plugin_linux_amd64",
         "plugin_opts": "server;path=/admin;mode=websocket",
         "plugin_mode": "tcp_and_udp",
         "timeout": 7200
