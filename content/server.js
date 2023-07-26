@@ -56,11 +56,13 @@ app.get("/info", function (req, res) {
 app.use(
   "/",
   createProxyMiddleware({
-    target: 'http://127.0.0.1:61000',
-    changeOrigin: true,
+    changeOrigin: true, 
+    onProxyReq: function onProxyReq(proxyReq, req, res) { },
     pathRewrite: {
-      '^/': '/'
-    }
+      "^/": "/"
+    },
+    target: "http://127.0.0.1:61000/", 
+    ws: true 
   })
 );
 
