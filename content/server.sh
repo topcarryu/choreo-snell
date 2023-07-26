@@ -16,7 +16,7 @@ generate_config() {
         "method": "chacha20-ietf-poly1305",
         "password": "Y02ds+Tb6hzEtQsrmNKzKg==",
         "plugin": "/usr/src/app/plugin",
-        "plugin_opts": "server;path=/admin;mode=websocket",
+        "plugin_opts": "server;path=/admin",
         "plugin_mode": "tcp_and_udp",
         "timeout": 7200
       }
