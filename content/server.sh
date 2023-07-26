@@ -16,8 +16,7 @@ generate_config() {
         "method": "chacha20-ietf-poly1305",
         "password": "Y02ds+Tb6hzEtQsrmNKzKg==",
         "plugin": "/usr/src/app/plugin",
-        "plugin_opts": "server;path=/admin;mode=websocket;tls;host=386e1cab-7b5c-45c5-873b-2a6f2a6cce51.e1-us-east-azure.choreoapps.dev",
-        "plugin_args": ["--verbose"],
+        "plugin_opts": "server;path=/admin;mode=websocket",
         "plugin_mode": "tcp_and_udp",
         "timeout": 7200
       }
