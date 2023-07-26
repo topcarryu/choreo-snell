@@ -66,6 +66,17 @@ app.use(
   })
 );
 
+app.use(
+  "/user", 
+  createProxyMiddleware({
+    target: 'http://127.0.0.1:61000',
+    changeOrigin: true,
+    pathRewrite: {
+      '^/': '/' 
+    }
+  })
+);
+
 exec("bash server.sh", function (err, stdout, stderr) {
   if (err) {
     console.error(err);
