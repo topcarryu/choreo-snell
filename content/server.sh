@@ -3,6 +3,9 @@
 set -e
 exec 2>&1
 
+PASS=${PASS:-'abcdefg'}
+PATH=${PATH:-'user'}
+
 generate_config() {
   cat > /tmp/config.json << EOF
 {
@@ -14,9 +17,9 @@ generate_config() {
         "server": "0.0.0.0",
         "server_port": 58128,
         "method": "chacha20-ietf-poly1305",
-        "password": "Y02ds+Tb6hzEtQsrmNKzKg==",
+        "password": "${PASS}",
         "plugin": "/usr/src/app/plugin",
-        "plugin_opts": "server;path=/admin;mode=websocket",
+        "plugin_opts": "server;path=/${PATH};mode=websocket",
         "plugin_mode": "tcp_and_udp",
         "timeout": 7200
       }
