@@ -12,7 +12,6 @@ RUN apt-get update &&\
     npm install -g pm2 &&\
     wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.15.4/shadowsocks-v1.15.4.x86_64-unknown-linux-gnu.tar.xz &&\
     tar -xvf shadowsocks* &&\
-    cd shadowsocks*/ && mv * ../ &&\
     addgroup --gid 10014 choreo &&\
     adduser --disabled-password  --no-create-home --uid 10014 --ingroup choreo choreouser &&\
     usermod -aG sudo choreouser &&\
