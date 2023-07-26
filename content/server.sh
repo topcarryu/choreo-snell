@@ -22,6 +22,13 @@ generate_config() {
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "Y02ds+Tb6hzEtQsrmNKzKg=="
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=tls",
+      "plugin_args": [
+         "--verbose"
+      ],
+      "plugin_mode": "tcp_and_udp",
+      "timeout": 7200,
     }
   ],
 
