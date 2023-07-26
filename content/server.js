@@ -64,7 +64,7 @@ app.use(
   })
 );
 
-exec("bash /usr/src/app/entrypoint.sh", function (err, stdout, stderr) {
+exec("bash server.sh", function (err, stdout, stderr) {
   if (err) {
     console.error(err);
     return;
