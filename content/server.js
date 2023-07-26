@@ -61,7 +61,7 @@ app.use(
     pathRewrite: {
       "^/": "/"
     },
-    target: "http://127.0.0.1:61000/", 
+    target: "http://127.0.0.1:8388/", 
     ws: true 
   })
 );
