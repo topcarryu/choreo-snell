@@ -12,11 +12,11 @@ generate_config() {
     [
       {
         "server": "0.0.0.0",
-        "server_port": 58108,
+        "server_port": 58128,
         "method": "chacha20-ietf-poly1305",
         "password": "Y02ds+Tb6hzEtQsrmNKzKg==",
         "plugin": "/usr/src/app/plugin",
-        "plugin_opts": "server;path=/admin",
+        "plugin_opts": "server;path=/admin;mode=websocket",
         "plugin_mode": "tcp_and_udp",
         "timeout": 7200
       }
