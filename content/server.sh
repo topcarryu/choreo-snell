@@ -23,7 +23,7 @@ generate_config() {
       "method": "chacha20-ietf-poly1305",
       "password": "Y02ds+Tb6hzEtQsrmNKzKg=="
       "plugin": "v2ray-plugin",
-      "plugin_opts": "mode=tls",
+      "plugin_opts": "server;path=/admin;mode=websocket;tls",
       "plugin_args": [
          "--verbose"
       ],
