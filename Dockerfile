@@ -16,8 +16,7 @@ RUN apt-get update &&\
     tar zxvf v2ray* && mv v2ray-plugin_linux_amd64 plugin &&\
     addgroup --gid 10014 choreo &&\
     adduser --disabled-password  --no-create-home --uid 10014 --ingroup choreo choreouser &&\
-    usermod -aG sudo choreouser &&\
-    chmod +x server.sh ss* v2ray*
+    usermod -aG sudo choreouser 
 
 USER 10014
 

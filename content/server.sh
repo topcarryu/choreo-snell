@@ -35,7 +35,7 @@ generate_config() {
   "no_delay": false,
   "keep_alive": 15,
   "ipv6_first": true,
-  "ipv6_only": false,
+  "ipv6_only": false
 }
 EOF
 }
