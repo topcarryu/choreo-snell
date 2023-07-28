@@ -28,7 +28,7 @@ generate_config() {
   "manager_address": "127.0.0.1",
   "manager_port": 61000,
 
-  "dns": "cloudflare_https",
+  "dns": "google",
   "dns_cache_size": 128,
   "mode": "tcp_and_udp",
 
