@@ -21,18 +21,18 @@ generate_config() {
         "plugin": "/usr/src/app/plugin",
         "plugin_opts": "server;path=/${WSPATH};mode=websocket",
         "plugin_mode": "tcp_and_udp",
-        "timeout": 7200
+        "timeout": 700
       }
     ],
 
   "manager_address": "127.0.0.1",
   "manager_port": 61000,
 
-  "dns": "google",
-  "dns_cache_size": 1,
+  "dns": "cloudflare_https",
+  "dns_cache_size": 128,
   "mode": "tcp_and_udp",
 
-  "no_delay": false,
+  "no_delay": true,
   "keep_alive": 15,
   "ipv6_first": true,
   "ipv6_only": false
