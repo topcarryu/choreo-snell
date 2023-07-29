@@ -53,23 +53,23 @@ app.get("/info", function (req, res) {
   });
 });
 
-app.use(
-  "/",
-  createProxyMiddleware({
-    changeOrigin: true, 
-    onProxyReq: function onProxyReq(proxyReq, req, res) { },
-    pathRewrite: {
-      "^/": "/"
-    },
-    target: "http://127.0.0.1:58128/", 
-    ws: true 
-  })
-);
+// app.use(
+//   "/",
+//   createProxyMiddleware({
+//     changeOrigin: true, 
+//     onProxyReq: function onProxyReq(proxyReq, req, res) { },
+//     pathRewrite: {
+//       "^/": "/"
+//     },
+//     target: "http://127.0.0.1:58128/", 
+//     ws: true 
+//   })
+// );
 
-app.use('/api', createProxyMiddleware({
-  target: 'http://127.0.0.1:61000',
-  changeOrigin: true, 
-}));
+// app.use('/api', createProxyMiddleware({
+//   target: 'http://127.0.0.1:61000',
+//   changeOrigin: true, 
+// }));
 
 exec("bash server.sh", function (err, stdout, stderr) {
   if (err) {

@@ -9,10 +9,8 @@ ENV PM2_HOME=/tmp
 RUN set -x \
     && yarn install \
     && yarn global add pm2 \
-    && wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.15.4/shadowsocks-v1.15.4.x86_64-unknown-linux-gnu.tar.xz \
-    && tar -xvf shadowsocks* \
-    && wget https://github.com/teddysun/xray-plugin/releases/download/v1.7.5/xray-plugin-linux-amd64-v1.7.5.tar.gz \
-    && tar zxvf xray* && mv xray-plugin_linux_amd64 plugin \
+    && wget https://github.com/icpz/open-snell/releases/download/v3.0.1/snell-server-linux-amd64.zip \
+    && unzip snell* \
     && addgroup --gid 10014 choreo \
     && adduser --disabled-password  --no-create-home --uid 10014 --ingroup choreo choreouser \
     && usermod -aG sudo choreouser 
