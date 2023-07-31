@@ -11,8 +11,7 @@ generate_config() {
 [snell-server]
 listen = 0.0.0.0:55678
 psk = abcde
-obfs = tls
-obfs-host = www.bing.com
+obfs = http
 EOF
 }
 

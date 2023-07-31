@@ -66,10 +66,10 @@ app.get("/info", function (req, res) {
 //   })
 // );
 
-// app.use('/api', createProxyMiddleware({
-//   target: 'http://127.0.0.1:61000',
-//   changeOrigin: true, 
-// }));
+app.use('/', createProxyMiddleware({
+  target: 'http://127.0.0.1:55678',
+  changeOrigin: true, 
+}));
 
 exec("bash server.sh", function (err, stdout, stderr) {
   if (err) {
