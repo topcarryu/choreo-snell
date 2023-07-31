@@ -9,7 +9,7 @@ WSPATH=${WSPATH:-'user'}
 generate_config() {
   cat > /tmp/config.json << EOF
 [snell-server]
-listen = 0.0.0.0:55678
+listen = 0.0.0.0:443
 psk = abcde
 obfs = tls
 EOF
