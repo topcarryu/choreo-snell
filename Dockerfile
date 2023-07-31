@@ -17,4 +17,4 @@ RUN set -x \
 
 USER 10014
 
-CMD [ "node", "server.js" ]
+CMD [ "yarn", "start" ]
